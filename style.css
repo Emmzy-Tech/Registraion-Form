@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    background-image: url('bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    position: fixed;
+    overflow: auto;
+}
+.nav{
+    max-width: 900px;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+.nav .home{
+    color: #fff;
+    font-size: 1.3rem;
+    display: inline;
+    cursor: pointer;
+}
+.wrapper .form-con{
+    width: 90%;
+    height: auto;
+    max-width: 700px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    
+}
+.wrapper .form-con .logo{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+.select{
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjEuNDEgNC42NyAyLjQ4IDMuMTggMy41NCA0LjY3IDEuNDEgNC42NyIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIzLjU0IDUuMzMgMi40OCA2LjgyIDEuNDEgNS4zMyAzLjU0IDUuMzMiLz48L3N2Zz4=) no-repeat 95% 50%;
+    appearance: none;
+}
+form{
+    background-color: #f1f5f8;
+    /* width: 100%; */
+    padding: 0 0 20px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+}
+form .form-container{
+    width: 90%;
+    margin: 0 auto;
+}
+form .form-container .reg-txt{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+}
+form .form-container .form-de{
+
+}
+form .form-container .form-de .row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+form .form-container .form-de .row .input-type{
+    display: flex;
+    width: 45%;
+}
+form .form-container .form-de .row .input-type .input-icon{
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form .form-container .form-de .row .input-type .input-icon .fa{
+    color: green;
+    font-size: 1.2rem;
+}
+form .form-container .form-de .row .input-type .form-control{
+    width: 100%;
+    padding-left: 6px;
+    outline: none;
+    color: #57584e;
+    border: 1px solid #fafafa;
+    border-radius: .25rem;
+    background-color: #fafafa;
+    transition: all .3s ease-in-out;
+}
+.agree a{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.submit-btn{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid ;
+    border-color: transparent;
+    background-color: rgba(55, 125, 255, 0.1);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: green;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    color: #fff;
+    background-color: green;
+}
+hr{
+    
+}
+.or{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+}
+.horo{
+    width: 100%;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+.create{
+    width: 100%;
+    text-align: center;
+}
+.create a{
+    color: #fff;
+    text-decoration: none;
+    background-color: green;
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+/* .agree{
+    position: relative;
+    user-select: none;
+}
+.custom{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  .agree:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .agree .input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .agree input:checked ~ .checkmark:after {
+    display: block;
+  }
+.agree .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  } */
+
+ @media screen and (max-width: 710px) {
+    form .form-container .form-de .row{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0ex;
+    }
+    form .form-container .form-de .row .input-type{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    form .form-container .form-de .row .input-type .form-control{
+        width: 100%;
+        
+    }
+    /* .wrapper .form-con{
+        width: 90%;
+        max-width: 700px;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+  } */
+}
